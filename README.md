@@ -1,2 +1,2 @@
 # devenv-tensorflow-gpu
-Add these into a .devcontainer at the root of your VSCode project
+Base project that sets up a tensorflow with GPU enabled dev container for VSCode
