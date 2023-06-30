@@ -8,6 +8,10 @@
     // run arguments
     "runArgs" : ["--gpus=all"],
   
+    // extensions have to be added to the docker container, so we add them here,
+    // in vscode, you can click on the little 'gear' on an extension and add it 
+    // to the devcontainer.json (and it will put it here) if you have additional
+    // ones that you really want
     "customizations": {
       "vscode": {
         "settings": {},
@@ -16,8 +20,6 @@
           "ms-python.python",
           "ms-python.vscode-pylance",
           "ms-toolsai.jupyter",
-          "visualstudioexptteam.vscodeintellicode",
-          "esbenp.prettier-vscode",
           "rsip-vision.nvidia-smi-plus",
 		    ]
       }
