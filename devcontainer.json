@@ -1,0 +1,31 @@
+//devcontainer.json
+{
+    "name": "DevContainer for Tensorflow with GPU",
+  
+    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    //"image": "tensorflow/tensorflow:latest-gpu",
+    "build" : { "dockerfile": "Dockerfile" },
+
+    // Features to add to the dev container. More info: https://containers.dev/features.
+    // "features": {},
+
+    // run arguments
+    "runArgs" : ["--gpus=all"],
+  
+    "customizations": {
+      "vscode": {
+        "settings": {},
+        "extensions": [
+          "streetsidesoftware.code-spell-checker",
+          "ms-python.python",
+          "ms-python.vscode-pylance",
+          "ms-toolsai.jupyter",
+          "visualstudioexptteam.vscodeintellicode",
+          "esbenp.prettier-vscode",
+          "rsip-vision.nvidia-smi-plus",
+		    ]
+      }
+    },
+
+    "remoteUser": "mler"
+  }
